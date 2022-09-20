@@ -1,8 +1,8 @@
 <template>
 
-    <StartPreloader v-if="isLoading" />
+    <!-- <StartPreloader v-if="isLoading" /> -->
     <TopNav :contact="contact" :about="about" />
-    <SideBarModal />
+    <SideBarModal :contact="contact" :about="about" />
 
     <slot />
 

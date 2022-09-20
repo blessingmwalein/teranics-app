@@ -2,16 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\About;
-use App\Models\Brand;
-use App\Models\Category;
-use App\Models\Contact;
-use App\Models\Product;
-use App\Models\Service;
+use App\Models\Banner;
 use Illuminate\Http\Request;
-use Inertia\Inertia;
 
-class AboutController extends Controller
+class BannerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,14 +14,7 @@ class AboutController extends Controller
      */
     public function index()
     {
-
-        return Inertia::render('About', [
-            'categories' => Category::take(3)->get(),
-            'brands' => Brand::all(),
-            'services' => Product::all(),
-            'contact' => Contact::where('title', 'sales')->first(),
-            'about' => About::first(),
-        ]);
+        //
     }
 
     /**
@@ -54,10 +41,10 @@ class AboutController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\About  $about
+     * @param  \App\Models\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function show(About $about)
+    public function show(Banner $banner)
     {
         //
     }
@@ -65,10 +52,10 @@ class AboutController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\About  $about
+     * @param  \App\Models\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function edit(About $about)
+    public function edit(Banner $banner)
     {
         //
     }
@@ -77,10 +64,10 @@ class AboutController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\About  $about
+     * @param  \App\Models\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, About $about)
+    public function update(Request $request, Banner $banner)
     {
         //
     }
@@ -88,10 +75,10 @@ class AboutController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\About  $about
+     * @param  \App\Models\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function destroy(About $about)
+    public function destroy(Banner $banner)
     {
         //
     }

@@ -10,16 +10,16 @@ class Category extends Model
     use HasFactory;
     protected $gaurded;
 
-    protected $with = ['services', 'brands'];
+    protected $with = ['brands'];
 
-
-    public function services()
-    {
-        return $this->hasMany(Service::class);
-    }
 
     public function brands()
     {
         return $this->hasMany(Brand::class);
+    }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
     }
 }

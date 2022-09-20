@@ -10,13 +10,13 @@
                     <div class="col-lg-7 col-md-6">
                         <ul class="top-header-content">
                             <li>
-                                <i class="ri-customer-service-line"></i>
-                                <a :href="`tel:${contact.phone}`">{{  contact.phone  }}</a>
+                                <i class="ri-customer-service-line" style="color:black"></i>
+                                <a :href="`tel:${contact.phone}`" style="color:black">{{  contact.phone  }}</a>
                             </li>
 
                             <li>
-                                <i class="ri-earth-line"></i>
-                                <a href=""><span class="__cf_email__">{{  contact.email  }}</span></a>
+                                <i class="ri-earth-line" style="color:black"></i>
+                                <a href=""><span class="__cf_email__" style="color:black">{{  contact.email  }}</span></a>
                             </li>
                         </ul>
                     </div>
@@ -24,16 +24,16 @@
                     <div class="col-lg-5 col-md-6">
                         <ul class="top-header-optional">
                             <li>
-                                <a href="#" target="_blank">
+                                <a href="#" target="_blank" style="color:black">
                                     <i class="ri-facebook-fill"></i>
                                 </a>
-                                <a href="#" target="_blank">
+                                <a href="#" target="_blank" style="color:black">
                                     <i class="ri-twitter-fill"></i>
                                 </a>
-                                <a href="#" target="_blank">
+                                <a href="#" target="_blank" style="color:black">
                                     <i class="ri-linkedin-fill"></i>
                                 </a>
-                                <a href="#" target="_blank">
+                                <a href="#" target="_blank" style="color:black">
                                     <i class="ri-messenger-fill"></i>
                                 </a>
                             </li>
@@ -50,7 +50,6 @@
                 <div class="container">
                     <div class="main-responsive-menu">
                         <div class="logo">
-
                             <Link href="/">
                             <img src="/images/logo-tera.png" class="black-logo" alt="logo">
                             <img src="/images/logo-tera.png" class="white-logo" alt="logo">
@@ -71,10 +70,10 @@
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active">
+                                    <Link href="/" class="nav-link active">
                                         Home
                                         <!-- <i class="ri-add-line"></i> -->
-                                    </a>
+                                    </Link>
 
 
                                 </li>
@@ -113,8 +112,8 @@
                                 </div>
 
                                 <div class="option-item">
-                                    <a href="contact.html" class="default-btn">Get a quote <i
-                                            class="ri-message-line"></i><span></span></a>
+                                    <Link href="/about" class="default-btn">Get a quote <i
+                                            class="ri-message-line"></i><span></span></Link>
                                 </div>
 
                                 <div class="option-item">
@@ -160,8 +159,8 @@
                                 </div>
 
                                 <div class="option-item">
-                                    <a href="contact.html" class="default-btn">Get a quote <i
-                                            class="ri-message-line"></i><span></span></a>
+                                    <Link href="/" class="default-btn">Get a quote <i
+                                            class="ri-message-line"></i><span></span></Link>
                                 </div>
 
                                 <div class="option-item">

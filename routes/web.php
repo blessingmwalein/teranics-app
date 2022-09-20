@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\GetIntouchController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Foundation\Application;
@@ -42,7 +43,8 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/products', [ProductController::class, 'index'])->name('products');
 Route::get('/shop', [ProductController::class, 'shop'])->name('shop');
 Route::get('/about', [AboutController::class, 'index'])->name('home');
-Route::get('/gallery', [ProductController::class, 'gallery'])->name('home');
+Route::post('/contact-us', [GetIntouchController::class, 'store'])->name('contact-us');
+Route::get('/gallery', [ProductController::class, 'gallery'])->name('gallery');
 
 
 Route::group(['prefix' => 'admin'], function () {
